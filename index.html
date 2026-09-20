@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>情報量と誤り検出を体験しよう</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="app-header">
+  <h1 class="app-title">情報量と誤り検出を体験しよう</h1>
+
+  <ol class="progress" id="progress">
+    <li class="progress__step" data-stage="1">
+      <span class="progress__num"><span class="progress__num-text">1</span></span>
+      <span class="progress__label">目視比較</span>
+    </li>
+    <li class="progress__step" data-stage="2">
+      <span class="progress__num"><span class="progress__num-text">2</span></span>
+      <span class="progress__label">規則をつくる</span>
+    </li>
+    <li class="progress__step" data-stage="3">
+      <span class="progress__num"><span class="progress__num-text">3</span></span>
+      <span class="progress__label">1bit反転</span>
+    </li>
+    <li class="progress__step" data-stage="4">
+      <span class="progress__num"><span class="progress__num-text">4</span></span>
+      <span class="progress__label">2bit反転</span>
+    </li>
+  </ol>
+</header>
+
+<main id="app" class="app-main">
+  <!-- 各STAGEの画面は script.js が動的に描画します -->
+</main>
+
+<footer class="app-footer">
+  <button type="button" id="btn-back" class="btn btn--ghost">← 戻る</button>
+  <button type="button" id="btn-restart" class="btn btn--ghost">最初からやり直す</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
